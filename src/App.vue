@@ -1,0 +1,57 @@
+<template>
+  <Nav />
+  <router-view />
+</template>
+
+<script>
+import Nav from './components/Nav.vue';
+
+export default {
+  name: "App",
+  components: {
+    Nav
+  }
+}
+
+</script>
+
+
+<style>
+:root {
+    --good-things-red: #C0323B;
+    --good-things-green: #478175;
+    --good-things-teal: #497C8F;
+}
+
+@font-face {
+    font-family: Rubik;
+    src: url('../src/assets/Fonts/Rubik-Regular.ttf') format('truetype');
+    font-display: swap;   
+}
+  * {
+    font-family: 'Rubik';
+    box-sizing: border-box;
+  }
+
+  a {
+    text-decoration: none;
+    outline: none;
+    border: none;
+    color: #000;
+  }
+
+  a:hover,
+  a:visited {
+    color: #000;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p {
+    margin: 0;
+  }
+</style>
